@@ -26,5 +26,11 @@ package.json
 *.sln
 *.sw?
 
-# vite folder
-.vite
+# angular files
+node_modules
+dist
+dist-ssr
+*.local
+
+package-lock.json
+package.json
