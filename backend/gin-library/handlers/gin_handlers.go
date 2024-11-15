@@ -35,9 +35,9 @@ func GetGinByID(c *gin.Context) {
 		return
 	}
 
-	for _, gin := range data.Gins {
-		if gin.GinID == ginID {
-			c.IndentedJSON(http.StatusOK, gin)
+	for _, ginEntry := range data.Gins {
+		if ginEntry.GinID == ginID {
+			c.IndentedJSON(http.StatusOK, ginEntry)
 			return
 		}
 	}
