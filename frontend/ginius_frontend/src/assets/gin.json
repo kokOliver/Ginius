@@ -1,0 +1,19 @@
+{
+  "gins": [
+    {
+      "name": "Hendrick's",
+      "origin": "Scotland",
+      "botanicals": ["juniper", "cucumber", "rose"]
+    },
+    {
+      "name": "Tanqueray",
+      "origin": "England",
+      "botanicals": ["juniper", "coriander", "angelica root"]
+    },
+    {
+      "name": "Bombay Sapphire",
+      "origin": "England",
+      "botanicals": ["juniper", "lemon peel", "coriander"]
+    }
+  ]
+}
