@@ -1,19 +1,18 @@
 {
   "gins": [
     {
-      "name": "Hendrick's",
-      "origin": "Scotland",
-      "botanicals": ["juniper", "cucumber", "rose"]
-    },
-    {
-      "name": "Tanqueray",
+      "name": "Tanqueray no10",
       "origin": "England",
-      "botanicals": ["juniper", "coriander", "angelica root"]
-    },
-    {
-      "name": "Bombay Sapphire",
-      "origin": "England",
-      "botanicals": ["juniper", "lemon peel", "coriander"]
+      "description": "A super premium gin, distilled in small batches with fresh citrus fruits",
+      "botanicals": [
+        "juniper",
+        "coriander",
+        "angelica",
+        "liquorice",
+        "grapefruit",
+        "lime",
+        "orange"
+      ]
     }
   ]
 }

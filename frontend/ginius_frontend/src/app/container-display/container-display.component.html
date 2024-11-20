@@ -1,11 +1,36 @@
-<div class="container">
-  <h1>{{ title }}</h1>
-  <div *ngFor="let gin of data.gins" class="gin-box">
-    <h2>{{ gin.name }}</h2>
-    <p><strong>Origin:</strong> {{ gin.origin }}</p>
-    <p><strong>Botanicals:</strong></p>
-    <ul>
-      <li *ngFor="let botanical of gin.botanicals">{{ botanical }}</li>
-    </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gin Bottle Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="container">
+    <h1>{{ title }}</h1>
+    <ul></ul>
+
+    <div *ngFor="let gin of data.gins" class="gin-box">
+      <div class="relative max-w-xs w-full rounded-lg overflow-hidden group">
+        <!-- Image -->
+        <img
+          src="https://via.placeholder.com/200x400"
+          alt="Gin Bottle"
+          class="w-full h-96 object-cover transition-all duration-300 group-hover:brightness-50"
+        />
+        <!-- Name (Visible by default, hidden on hover) -->
+        <div
+          class="absolute top-2 left-1 bg-gray-800 bg-opacity-75 text-white text-sm px-2 py-1 rounded group-hover:opacity-0 transition-opacity duration-300"
+        >
+          {{ gin.name }}
+        </div>
+        <!-- Description (Hidden by default, visible on hover) -->
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 text-white text-center px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <p class="text-sm">Description: {{ gin.description }}</p>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</body>
