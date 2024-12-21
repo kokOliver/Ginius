@@ -1,0 +1,12 @@
+﻿services:
+  application:
+    image: application
+    build:
+      context: .
+      dockerfile: Application/Dockerfile
+
+  core:
+    image: core
+    build:
+      context: .
+      dockerfile: Core/Dockerfile
