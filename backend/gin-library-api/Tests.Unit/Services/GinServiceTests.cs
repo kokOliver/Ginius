@@ -1,13 +1,17 @@
-﻿using Application.Interfaces;
+﻿
+
+using Application.Services;
 
 namespace Tests.Unit.Services;
 
-public class GinServiceTests(IGinService ginService)
+public class GinServiceTests
 {
+    private readonly GinService _uut = new();
+
     [Fact]
     public void GetGin_ReturnsGin()
     {
-        var result = ginService.GetGin();
+        var result = _uut.GetGin();
         
         Assert.Equal("Gin", result);
     }
